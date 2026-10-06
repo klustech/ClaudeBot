@@ -1,0 +1,33 @@
+{
+  "minTrades": 300,
+  "preferredTrades": 1000,
+  "minProfitFactor": 1.2,
+  "preferredProfitFactor": 1.4,
+  "maxDrawdown": 0.15,
+  "minOosExpectancyR": 0,
+  "minStabilityScore": 60,
+  "walkForward": {
+    "trainBars": 35040,
+    "testBars": 8760,
+    "stepBars": 8760,
+    "minProfitableFraction": 0.5,
+    "maxConfigsPerWindow": 20
+  },
+  "monteCarlo": {
+    "simulations": 10000,
+    "maxRuinProbability": 0.01,
+    "ruinDrawdown": 0.3,
+    "slippageSd": 0.002,
+    "missedTradeProbability": 0.03,
+    "feeMultiplierMax": 1.5,
+    "payoutVariation": 0.05
+  },
+  "minDeflatedSharpeProbability": 0.95,
+  "minConfidence": 80,
+  "maxStrategyCorrelation": 0.5,
+  "maxPortfolioStrategies": 5,
+  "paperGraduationTrades": [100, 250, 500, 1000],
+  "paperMinProfitFactor": 1.15,
+  "paperMaxDrawdown": 0.15,
+  "paperMaxDeviationFromOos": 0.5
+}

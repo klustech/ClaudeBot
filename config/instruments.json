@@ -1,0 +1,7 @@
+{
+  "default": "linear-perp",
+  "instruments": {
+    "linear-perp": { "kind": "linear", "feeRate": "0.00055", "slippageBps": 2 },
+    "fixed-payout-80": { "kind": "fixed-payout", "payout": "0.8", "lossFraction": "1", "feePerTrade": "0" }
+  }
+}

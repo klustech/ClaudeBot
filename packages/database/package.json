@@ -1,0 +1,24 @@
+{
+  "name": "@ct/database",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@ct/shared": "workspace:*",
+    "drizzle-orm": "^0.44.0",
+    "postgres": "^3.4.7",
+    "@electric-sql/pglite": "^0.3.0",
+    "@ct/core": "workspace:*"
+  },
+  "scripts": {
+    "generate": "drizzle-kit generate"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.0"
+  }
+}

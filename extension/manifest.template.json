@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Trader Execution Bridge",
+  "version": "0.1.0",
+  "description": "Executes signed, risk-approved trade instructions on an explicitly configured broker domain. Contains no strategy logic.",
+  "permissions": ["storage", "alarms"],
+  "host_permissions": ["__BROKER_HOSTS__", "http://127.0.0.1:4100/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [{ "matches": ["__BROKER_HOSTS__"], "js": ["content.js"], "run_at": "document_idle" }],
+  "action": { "default_popup": "popup.html", "default_title": "Claude Trader Bridge" }
+}

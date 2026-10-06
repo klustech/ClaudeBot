@@ -1,0 +1,22 @@
+{
+  "name": "@ct/runtime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "@ct/backtesting": "workspace:*",
+    "@ct/core": "workspace:*",
+    "@ct/database": "workspace:*",
+    "@ct/execution": "workspace:*",
+    "@ct/market-data": "workspace:*",
+    "@ct/research": "workspace:*",
+    "@ct/risk": "workspace:*",
+    "@ct/shared": "workspace:*",
+    "@ct/strategies": "workspace:*",
+    "@ct/telemetry": "workspace:*",
+    "@ct/validation": "workspace:*"
+  }
+}

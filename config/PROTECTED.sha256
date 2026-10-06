@@ -1,0 +1,6 @@
+# Pinned hashes of protected configuration. Regenerate ONLY after human review:
+#   pnpm verify:protected --update
+a80de3259d0adbc0071c6446846a0be81ee42c4c4cedf921983c2ce45ad32679  validation/locked-periods.json
+13025df95e39497c078eb04199a3c6006ac2dbead7b4175fff9f3aaf2e43f5a7  config/risk-limits.json
+472e82c7ae702878232b53263c79e6b3bda82db79ad9612af40740403ece7e01  config/validation-thresholds.json
+677e5e2884c7539b18b683a6536462cf62796428beb1f5cebcecb42171adb2c1  config/live-permissions.json

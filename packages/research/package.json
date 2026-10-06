@@ -1,0 +1,26 @@
+{
+  "name": "@ct/research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@ct/shared": "workspace:*",
+    "@ct/core": "workspace:*",
+    "@ct/database": "workspace:*",
+    "@ct/strategies": "workspace:*",
+    "@ct/backtesting": "workspace:*",
+    "@ct/optimisation": "workspace:*",
+    "@ct/validation": "workspace:*",
+    "@ct/scoring": "workspace:*",
+    "@ct/portfolio": "workspace:*",
+    "@ct/market-data": "workspace:*",
+    "@ct/telemetry": "workspace:*",
+    "@ct/risk": "workspace:*",
+    "zod": "^4.1.0"
+  }
+}

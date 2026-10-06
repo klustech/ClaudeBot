@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(validation/locked-periods.json)",
+      "Write(validation/locked-periods.json)",
+      "Edit(config/risk-limits.json)",
+      "Write(config/risk-limits.json)",
+      "Edit(config/validation-thresholds.json)",
+      "Write(config/validation-thresholds.json)",
+      "Edit(config/live-permissions.json)",
+      "Write(config/live-permissions.json)",
+      "Edit(config/PROTECTED.sha256)",
+      "Write(config/PROTECTED.sha256)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Bash(pnpm verify:protected --update:*)",
+      "Bash(pnpm trading:kill --release:*)",
+      "Bash(cat .env:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|MultiEdit|NotebookEdit",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR\"/scripts/hooks/guard-protected.mjs" }]
+      }
+    ]
+  }
+}

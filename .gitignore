@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+coverage/
+data/*.json
+data/*.csv
+!data/.gitkeep
+runtime/*
+!runtime/.gitkeep
+extension/dist/
+.pglite/

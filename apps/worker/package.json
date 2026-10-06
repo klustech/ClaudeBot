@@ -1,0 +1,30 @@
+{
+  "name": "@ct/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@ct/api": "workspace:*",
+    "@ct/core": "workspace:*",
+    "@ct/database": "workspace:*",
+    "@ct/research": "workspace:*",
+    "@ct/shared": "workspace:*",
+    "@ct/telemetry": "workspace:*",
+    "@ct/validation": "workspace:*",
+    "bullmq": "^5.58.0",
+    "ioredis": "^5.7.0",
+    "@electric-sql/pglite": "^0.3.0",
+    "postgres": "^3.4.7",
+    "drizzle-orm": "^0.44.0",
+    "pino": "^9.7.0",
+    "decimal.js": "^10.6.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0"
+  }
+}

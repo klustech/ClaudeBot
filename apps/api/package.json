@@ -1,0 +1,37 @@
+{
+  "name": "@ct/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@ct/core": "workspace:*",
+    "@ct/database": "workspace:*",
+    "@ct/research": "workspace:*",
+    "@ct/risk": "workspace:*",
+    "@ct/shared": "workspace:*",
+    "@ct/strategies": "workspace:*",
+    "@ct/telemetry": "workspace:*",
+    "@ct/validation": "workspace:*",
+    "@fastify/cors": "^11.1.0",
+    "bullmq": "^5.58.0",
+    "fastify": "^5.6.0",
+    "ioredis": "^5.7.0",
+    "zod": "^4.1.0",
+    "@electric-sql/pglite": "^0.3.0",
+    "postgres": "^3.4.7",
+    "drizzle-orm": "^0.44.0",
+    "pino": "^9.7.0",
+    "decimal.js": "^10.6.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0"
+  },
+  "exports": {
+    "./jobs": "./src/jobs.ts",
+    "./research-jobs": "./src/research-jobs.ts"
+  }
+}

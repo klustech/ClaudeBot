@@ -1,0 +1,7 @@
+{
+  "BTCUSDT": { "trainStart": "2019-01-01", "trainEnd": "2024-01-01", "validationEnd": "2025-01-01", "testEnd": "2026-01-01" },
+  "ETHUSDT": { "trainStart": "2019-01-01", "trainEnd": "2024-01-01", "validationEnd": "2025-01-01", "testEnd": "2026-01-01" },
+  "SOLUSDT": { "trainStart": "2021-01-01", "trainEnd": "2024-01-01", "validationEnd": "2025-01-01", "testEnd": "2026-01-01" },
+  "SYNTHETHUSDT": { "trainStart": "2023-01-01", "trainEnd": "2024-07-01", "validationEnd": "2025-01-01", "testEnd": "2025-04-01" },
+  "SYNTHBTCUSDT": { "trainStart": "2023-01-01", "trainEnd": "2024-07-01", "validationEnd": "2025-01-01", "testEnd": "2025-04-01" }
+}

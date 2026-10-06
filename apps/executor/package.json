@@ -1,0 +1,34 @@
+{
+  "name": "@ct/executor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@ct/backtesting": "workspace:*",
+    "@ct/core": "workspace:*",
+    "@ct/database": "workspace:*",
+    "@ct/exchanges": "workspace:*",
+    "@ct/execution": "workspace:*",
+    "@ct/market-data": "workspace:*",
+    "@ct/research": "workspace:*",
+    "@ct/risk": "workspace:*",
+    "@ct/runtime": "workspace:*",
+    "@ct/shared": "workspace:*",
+    "@ct/telemetry": "workspace:*",
+    "@ct/validation": "workspace:*",
+    "fastify": "^5.6.0",
+    "zod": "^4.1.0",
+    "@electric-sql/pglite": "^0.3.0",
+    "postgres": "^3.4.7",
+    "drizzle-orm": "^0.44.0",
+    "pino": "^9.7.0",
+    "decimal.js": "^10.6.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0"
+  }
+}

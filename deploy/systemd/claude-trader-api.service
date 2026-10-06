@@ -1,0 +1,21 @@
+[Unit]
+Description=Claude Trader api
+After=network-online.target postgresql.service redis.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=trader
+WorkingDirectory=/opt/claude-trader
+EnvironmentFile=/opt/claude-trader/.env
+ExecStart=/usr/bin/node apps/api/dist/index.js
+Restart=on-failure
+RestartSec=5
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/claude-trader/runtime /opt/claude-trader/reports /opt/claude-trader/data
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

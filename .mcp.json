@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "trading-control": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["--import", "tsx", "mcp/trading-control/src/index.ts"],
+      "env": {
+        "API_URL": "http://127.0.0.1:4100",
+        "CONTROL_API_TOKEN": "${CONTROL_API_TOKEN:-}"
+      }
+    },
+    "trader-dev": {
+      "type": "http",
+      "url": "https://mcp.trader.dev/mcp"
+    }
+  }
+}

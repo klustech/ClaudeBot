@@ -1,0 +1,5 @@
+# Protected trading configuration requires human review.
+/validation/locked-periods.json @klustech
+/config/ @klustech
+/.claude/settings.json @klustech
+/scripts/hooks/ @klustech
