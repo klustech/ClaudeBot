@@ -13,3 +13,4 @@ runtime/*
 !runtime/.gitkeep
 extension/dist/
 .pglite/
+.claude/settings.local.json

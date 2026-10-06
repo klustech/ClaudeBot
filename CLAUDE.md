@@ -97,6 +97,13 @@ You **may** always call `disable_trading` (kill switch) if anything looks wrong.
   carries an idempotency key. Unknown execution state trips a breaker (fail closed).
 - After each change: `pnpm typecheck && pnpm test && pnpm build`, update docs, commit.
 
+## Git workflow
+
+- `main` is the integration branch. Work on a feature branch (or the session's designated branch),
+  merge it into `main` and push `main` once `pnpm typecheck && pnpm test && pnpm build` pass.
+- Always start new work from the latest `main` (`git fetch origin main && git merge origin/main`).
+- Never force-push `main`.
+
 ## Useful commands
 
 ```
